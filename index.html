@@ -1,0 +1,367 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0," />
+        <meta name="format-detection" content="telephone=no" />
+        <title>Buckaroo</title>
+        <link href="css/reset.css" type="text/css" rel="stylesheet">
+        <link href="css/main.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="preload">
+            <img src="img/shipments.png">
+            <img src="img/activities-a.png">
+            <img src="img/tracking-a.png">
+            <img src="img/options-a.png">
+        </div>
+        <div id="header">
+            <div id="status_bar"></div>
+            <h1>My Shipments</h1>
+            <div id="nav">
+                <div id="shipments" class="nav_button active">My Shipments</div>
+                <div id="activities" class="nav_button"> Activity Feed</div>
+                <div id="tracking" class="nav_button">Track Shipments</div>
+                <div id="options" class="nav_button">Options</div>
+            </div>
+            
+            <div id="new_post" class="rounded">
+                <h1>Post A New Shipment</h1>
+            </div>
+        </div>
+        <div id="main_content">
+            <div class="padding always_scroll">
+                <section id="content_shipments" class="page">
+                    <div class="shipment_card">
+                        <img src="img/posts/violin.jpg">
+                        <h1 class="title">Gift Violin</h1>
+                        <p class="origin"><span class="theme">From</span> Charlotte, NC 28278</p>
+                        <p class="destination"><span class="theme">To</span> Chapel Hill, NC 27514</p>
+                        <p class="extra">Posted Jan 11, 2017</p>
+                        
+                        <div class="caret"></div>
+                        <div class="progress">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <progress value="0" max="100"></progress>
+                            <div class="dlabel">Pending</div>
+                            <div class="dlabel">Picked Up</div>
+                            <div class="dlabel">On The Way</div>
+                            <div class="dlabel">Delivered</div>
+                        </div>
+                    </div>
+                    
+                    <div class="shipment_card">
+                        <img src="img/posts/keys.jpg">
+                        <h1 class="title">Key Delivery to UNC</h1>
+                        <p class="origin"><span class="theme">From</span> Charlotte, NC 28278</p>
+                        <p class="destination"><span class="theme">To</span> Chapel Hill, NC 27514</p>
+                        <p class="extra">Posted Dec 27, 2016</p>
+                        
+                        <div class="caret"></div>
+                        <div class="progress">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <progress value="33.33" max="100"></progress>
+                            <div class="dlabel">Pending</div>
+                            <div class="dlabel">Picked Up</div>
+                            <div class="dlabel">On The Way</div>
+                            <div class="dlabel">Delivered</div>
+                        </div>
+                    </div>
+                    
+                    <div class="shipment_card">
+                        <img src="img/posts/bike.jpg">
+                        <h1 class="title">Bike Delivery to NC State</h1>
+                        <p class="origin"><span class="theme">From</span> Charlotte, NC 28278</p>
+                        <p class="destination"><span class="theme">To</span> Raleigh, NC 27607</p>
+                        <p class="extra">Posted Nov 29, 2016</p>
+                        
+                        <div class="caret"></div>
+                        <div class="progress">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <progress value="66.66" max="100"></progress>
+                            <div class="dlabel">Pending</div>
+                            <div class="dlabel">Picked Up</div>
+                            <div class="dlabel">On The Way</div>
+                            <div class="dlabel">Delivered</div>
+                        </div>
+                    </div>
+                    
+                    <div class="shipment_card">
+                        <img src="img/posts/box.jpg">
+                        <h1 class="title">Birthday Gift</h1>
+                        <p class="origin"><span class="theme">From</span> Charlotte, NC 28278</p>
+                        <p class="destination"><span class="theme">To</span> Charlotte, NC 28269</p>
+                        <p class="extra">Posted Oct 02, 2016</p>
+                         
+                        <div class="caret"></div>
+                         <div class="progress">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <progress value="100" max="100"></progress>
+                            <div class="dlabel">Pending</div>
+                            <div class="dlabel">Picked Up</div>
+                            <div class="dlabel">On The Way</div>
+                            <div class="dlabel">Delivered</div>
+                        </div>
+                    </div>
+                    
+                    <div class="shipment_card">
+                        <img src="img/posts/box2.jpg">
+                        <h1 class="title">Small Package</h1>
+                        <p class="origin"><span class="theme">From</span> Chapel Hill, NC 27514</p>
+                        <p class="destination"><span class="theme">To</span> Raleigh, NC 27607</p>
+                        <p class="extra">Posted Jul 04, 2016</p>
+                         
+                        <div class="caret"></div>
+                         <div class="progress">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <progress value="100" max="100"></progress>
+                            <div class="dlabel">Pending</div>
+                            <div class="dlabel">Picked Up</div>
+                            <div class="dlabel">On The Way</div>
+                            <div class="dlabel">Delivered</div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="content_activities" class="page non_start">
+                
+                    <div class="general_block posted"><p>"Gift Violin" posted</p> <span class="act_date">Jan 11, 2017</span></div>
+                    
+                    <div class="general_block pickedup"><p>"Key Delivery to UNC" picked up</p> <span class="act_date">Dec 29, 2016</span></div>
+                    <div class="general_block accepted"><p>"Key Delivery to UNC" accepted for delivery</p> <span class="act_date">Dec 28, 2016</span></div>
+                    <div class="general_block posted"><p>"Key Delivery to UNC" posted</p> <span class="act_date">Dec 27, 2016</span></div>
+                    
+                    <div class="general_block otw"><p>"Bike Delivery to NC State" in transit</p> <span class="act_date">Nov 30, 2016</span></div>
+                    <div class="general_block pickedup"><p>"Bike Delivery to NC State" picked up</p> <span class="act_date">Nov 30, 2016</span></div>
+                    <div class="general_block accepted"><p>"Bike Delivery to NC State" accepted for delivery</p> <span class="act_date">Nov 30, 2016</span></div>
+                    <div class="general_block posted"><p>"Bike Delivery to NC State" posted</p> <span class="act_date">Nov 29, 2016</span></div>
+                    
+                    <div class="general_block delivered"><p>"Birthday Gift" delivered</p> <span class="act_date">Oct 02, 2016</span></div>
+                    <div class="general_block otw"><p>"Birthday Gift" in transit</p> <span class="act_date">Oct 02, 2016</span></div>
+                    <div class="general_block pickedup"><p>"Birthday Gift" picked up</p> <span class="act_date">Oct 02, 2016</span></div>
+                    <div class="general_block accepted"><p>"Birthday Gift" accepted for delivery</p> <span class="act_date">Oct 02, 2016</span></div>
+                    <div class="general_block posted"><p>"Birthday Gift" posted</p> <span class="act_date">Oct 02, 2016</span></div>
+                    
+                    <div class="general_block delivered"><p>"Small Package" delivered</p> <span class="act_date">Jul 06, 2016</span></div>
+                    <div class="general_block otw"><p>"Small Package" in transit</p> <span class="act_date">Jul 06, 2016</span></div>
+                    <div class="general_block pickedup"><p>"Small Package" picked up</p> <span class="act_date">Jul 06, 2016</span></div>
+                    <div class="general_block accepted"><p>"Small Package" accepted for delivery</p> <span class="act_date">Jul 05, 2016</span></div>
+                    <div class="general_block posted"><p>"Small Package" posted</p> <span class="act_date">Jul 04, 2016</span></div>
+                </section>
+                
+                <section id="content_tracking" class="">
+                    <div id="map"></div>
+                    <div id="tracking_scroll">
+                        <div class="shipment_card" lat="" lng="" start="7227 Kinley Commons Ln, Charlotte, NC 28278" end="480 Ehringhaus Dr, Chapel Hill, NC 27514">
+                            <img src="img/posts/violin.jpg">
+                            <h1 class="title">Gift Violin</h1>
+                            <p class="origin"><span class="theme">From</span> Charlotte, NC 28278</p>
+                            <p class="destination"><span class="theme">To</span> Chapel Hill, NC 27514</p>
+
+                            <div class="progress">
+                                <progress value="0" max="100"></progress>
+                            </div>
+                        </div>
+
+                        <div class="shipment_card" lat="35.239653" lng="-80.924543" start="7227 Kinley Commons Ln, Charlotte, NC 28278" end="480 Ehringhaus Dr, Chapel Hill, NC 27514" carrier="ACME Courrier">
+                            <img src="img/posts/keys.jpg">
+                            <h1 class="title">Key Delivery to UNC</h1>
+                            <p class="origin"><span class="theme">From</span> Charlotte, NC 28278</p>
+                            <p class="destination"><span class="theme">To</span> Chapel Hill, NC 27514</p>
+
+                            <div class="progress">
+                                <progress value="33.33" max="100"></progress>
+                            </div>
+                        </div>
+
+                        <div class="shipment_card" lat="36.064446" lng="-79.463860" start="7227 Kinley Commons Ln, Charlotte, NC 28278" end="2921 Thurman Dr, Raleigh, NC 27607">
+                            <img src="img/posts/bike.jpg">
+                            <h1 class="title">Bike Delivery to NC State</h1>
+                            <p class="origin"><span class="theme">From</span> Charlotte, NC 28278</p>
+                            <p class="destination"><span class="theme">To</span> Raleigh, NC 27607</p>
+
+                            <div class="progress">
+                                <progress value="66.66" max="100"></progress>
+                            </div>
+                        </div>
+
+                        <div class="shipment_card" lat="" lng="" start="7227 Kinley Commons Ln, Charlotte, NC 28278" end="6921 Castello Ln, Charlotte, NC 28269">
+                            <img src="img/posts/box.jpg">
+                            <h1 class="title">Birthday Gift</h1>
+                            <p class="origin"><span class="theme">From</span> Charlotte, NC 28278</p>
+                            <p class="destination"><span class="theme">To</span> Charlotte, NC 28269</p>
+
+                             <div class="progress">
+                                <progress value="100" max="100"></progress>
+                            </div>
+                        </div>
+
+                        <div class="shipment_card" lat="" lng="" start="480 Ehringhaus Dr, Chapel Hill, NC 27514" end="2921 Thurman Dr, Raleigh, NC 27607">
+                            <img src="img/posts/box2.jpg">
+                            <h1 class="title">Small Package</h1>
+                            <p class="origin"><span class="theme">From</span> Chapel Hill, NC 27514</p>
+                            <p class="destination"><span class="theme">To</span> Raleigh, NC 27607</p>
+
+                             <div class="progress">
+                                <progress value="100" max="100"></progress>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="content_options" class="page non_start">
+                    <div class="general_block" id="profile">
+                        <p>My Profile</p>
+                    </div>
+                    <div class="general_block" id="settings">
+                        <p>App Settings</p>
+                    </div>
+                    <div class="general_block" id="payment">
+                        <p>Payment</p>
+                    </div>
+                    <div class="general_block" id="promo">
+                        <p>Promotions</p>
+                    </div>
+                    <div class="general_block" id="about">
+                        <p>About</p>
+                    </div>
+                    <div class="general_block" id="rate">
+                        <p>Feedback & Rate</p>
+                    </div>
+                    <div class="general_block" id="help">
+                        <p>Help</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+        <div id="new_popup" class="">
+            <div id="header">
+                <div id="status_bar"></div>
+                <h1>New Shipment</h1>
+                <div id="new_cancel"></div>
+            </div>
+            <div id="main_content">
+                <div class="padding">
+                    <div id="image_picker">
+                        <h1>Choose a picture of your item</h1>
+                    </div>
+                    
+                    <h1 class="section_head">Item Information</h1>
+                    
+                    <p>Shipment Name</p>
+                    <input id="ipname" type="text">
+                    <p>Item Value ($)</p>
+                    <input id="ipvalue" type="number">
+                    <p>Short Description</p>
+                    <input id="ipdescription" type="text">
+                    <p id="size_label">Package Size</p>
+                    <img id="size_vis" src="img/options/medium.png">
+                    <div class="size_tray" id="package_size">
+                        <div id="small" class="tray_option">Small</div>
+                        <div id="medium" class="tray_option active">Medium</div>
+                        <div id="large" class="tray_option">Large</div>
+                        <div id="xlarge" class="tray_option">Extra Large</div>
+                    </div>
+                    <div id="weight_bar">
+                        <div id="weight_prog"></div>
+                    </div>
+                    <p>Package Weight (Max 50LBS)</p>
+                    <input id="ipweight" type="number" max="50">
+                    
+                    <h1 class="section_head">Pick Up Location</h1>
+                    
+                    <p>Address</p>
+                    <input id="ipaddress" type="text">
+                    <p>City</p>
+                    <input id="ipcity" type="text">
+                    <p>State</p>
+                    <input id="ipstate" type="text" maxlength="2">
+                    <p>ZIP</p>
+                    <input id="ipzip" type="number">
+                    
+                    <h1 class="section_head">Contact For Pick Up</h1>
+                    
+                    <div class="size_tray" id="pickup_person">
+                        <div id="me" class="tray_option active">Me</div>
+                        <div id="someone" class="tray_option">Someone Else</div>
+                        <div id="selfpickup" class="tray_option">Self Pick Up</div>
+                    </div>
+                    
+                    <section id="someone_option" class="pickup">
+                        <p>Contact Name</p>
+                        <input id="contactname" type="text">
+                        <p>Contact Phone Number</p>
+                        <input id="contacnumber" type="tel">
+                    </section>
+                    
+                    <section id="selfpickup_option" class="pickup">
+                        <p>Instructions for pick up</p>
+                        <input id="pickupdescription" type="text">
+                    </section>
+                    
+                    <h1 class="section_head">Drop Off Location</h1>
+                    
+                    <p>Address</p>
+                    <input id="ipaddressdo" type="text">
+                    <p>City</p>
+                    <input id="ipcitydo" type="text">
+                    <p>State</p>
+                    <input id="ipstatedo" type="text" maxlength="2">
+                    <p>ZIP</p>
+                    <input id="ipzipdo" type="number">
+                    
+                    <h1 class="section_head">Contact For Drop Off</h1>
+
+                    <div class="size_tray" id="dropoff_person">
+                        <div id="medo" class="tray_option active">Me</div>
+                        <div id="someonedo" class="tray_option">Someone Else</div>
+                        <div id="selfdo" class="tray_option">Self Drop Off</div>
+                    </div>
+                    
+                    <section id="someonedo_option" class="dropoff">
+                        <p>Contact Name</p>
+                        <input id="contactnamedo" type="text">
+                        <p>Contact Phone Number</p>
+                        <input id="contacnumberdo" type="tel">
+                    </section>
+                    
+                    <section id="selfdo_option" class="dropoff">
+                        <p>Instructions for drop off</p>
+                        <input id="pickupdescriptiondo" type="text">
+                    </section>
+                    
+                    <h1 class="section_head">Additional Information</h1>
+                    
+                    <p>Notes</p>
+                    <input id="ipcitydo" type="text">
+                    
+                    <div class="newform_button rounded" id="submit">Post Shipment</div>
+                    <div class="newform_button rounded" id="savedraft">Save Draft</div>
+                </div>
+            </div>             
+        </div>
+    </body>
+    <script src="cordova.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD7WfCVkBoLz2ZVMtzZQnDJF7XZ073G2E&callback=initMap"
+    ></script>
+</html>
